@@ -1,25 +1,19 @@
+<!-- content.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOLOGIN - Share Text/Codes Online</title>
-    <link rel="stylesheet" href="index_style.css">
+    <title>NOLOGIN - Enter Content</title>
+    <link rel="stylesheet" href="content_style.css">
 </head>
 <body>
     <div class="container">
-        <p>The simplest way to share text online</p>
-        <p><strong>NOLOGIN.com/</strong><input type="text" id="userInput" placeholder="Enter something"></p>
+        <label for="content">Enter your content:</label>
+        <textarea id="content" placeholder="Type your content here"></textarea>
 
-        <label for="durationHours">Link duration (hours):</label>
-        <input type="number" id="durationHours" min="0" placeholder="e.g., 1">
-
-        <label for="durationMinutes">Link duration (minutes):</label>
-        <input type="number" id="durationMinutes" min="0" max="59" placeholder="e.g., 30">
-
-        <button onclick="generateLink()">Go!</button>
-        <p id="link"></p>
+        <button onclick="saveContent()">Save</button>
     </div>
-    <script src="generate_link.js"></script>
+    <script src="content_script.js"></script>
 </body>
 </html>
