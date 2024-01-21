@@ -1,5 +1,3 @@
-// content_script.js
-
 function saveContent() {
     const content = document.getElementById("content").value;
 
@@ -9,7 +7,6 @@ function saveContent() {
     const durationHours = urlParams.get('durationHours');
     const durationMinutes = urlParams.get('durationMinutes');
 
-    // You would send this content to the server to be stored in the database
     // For simplicity, let's just display an alert for now
     alert(`Content saved for ${durationHours} hours and ${durationMinutes} minutes: ${content}`);
 
